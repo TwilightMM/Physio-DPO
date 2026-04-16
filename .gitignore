@@ -1,0 +1,63 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+env/
+
+# Editor and OS artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+__MACOSX/
+**/__MACOSX/
+._*
+
+# HuggingFace / model caches and downloaded weights
+**/.cache/
+**/cache/
+**/models/
+**/physio_dpo/models/
+PhysioDPO_Train/PhysioDPO_Train/hugohrban/
+
+# Training outputs, checkpoints, logs, and inference artifacts
+**/checkpoints/
+**/runs/
+**/results/
+*.log
+events.out.tfevents.*
+optimizer.pt
+scheduler.pt
+trainer_state.json
+training_args.bin
+adapter_model.safetensors
+
+# Large model/tokenizer artifacts
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+*.h5
+*.onnx
+
+# Generated datasets and visualization outputs
+PhysioDPO_Data/PhysioDPO_Data/output/
+Protein_Case/*.pdb
+Protein_Case/protein_view.html
+PhysioDPO_Data/PhysioDPO_Data/output/visualizations/3Dmol-min.js
+
+# Local download leftovers / accidental files
+=*
+*.incomplete
